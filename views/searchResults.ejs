@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h3>Harsh's Movies Site</h3>
+        <div class="top-bar">
+            <nav>
+                <button onclick="window.location.href='/'">Home</button>
+                <button onclick="window.location.href='bollywood.html'">Bollywood</button>
+                <button onclick="window.location.href='hollywood.html'">Hollywood</button>
+            </nav>
+            <div class="search-container">
+                <form action="/search" method="GET">
+                    <input type="text" id="searchBox" name="query" placeholder="Search movies...">
+                    <button class="search-btn" type="submit"><img src="/images/magnifiericon.png"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="movie-container">
+            <% movies.forEach(movie => { %>
+                <div class="movie-card" onclick="setMovieTitle('<%= movie.title %>')"> 
+                    <a href="/moviedisplay?title=<%= movie.title %>"> 
+                        <img height="330px" src="<%= movie.src %>" alt="<%= movie.title %>"> 
+                        <div class="movie-info"> 
+                            <h4><%= movie.title %></h4> 
+                        </div>
+                    </a>
+                </div>
+            <% }) %>
+        </div>
+    </main>
+</body>
+</html>
