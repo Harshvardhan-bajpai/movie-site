@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh's Movie Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h3>Harsh's Movies Site</h3>
+        <div class="top-bar">
+            <nav>
+                <button onclick="window.location.href='/'">Home</button>
+                <button onclick="window.location.href='bollywood.html'">Bollywood</button>
+                <button onclick="window.location.href='hollywood.html'">Hollywood</button>
+            </nav>
+            <div class="search-container">
+                <form action="/search" method="GET">
+                    <input type="text" id="searchBox" name="query" placeholder="Search movies...">
+                    <button class="search-btn" type="submit"><img src="/images/magnifiericon.png"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="movie-container">
+            <div class="movie-card" onclick="setMovieTitle('47 RONIN')"> 
+                <a href="/moviedisplay?title=47 RONIN"> 
+                    <img height="330px" src="/images/47 RONIN.jpg" alt="47 RONIN"> 
+                    <div class="movie-info"> 
+                        <h4>47 RONIN</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('ANIMAL')"> 
+                <a href="/moviedisplay?title=ANIMAL"> 
+                    <img height="330px" src="/images/ANIMAL.jpg" alt="ANIMAL"> 
+                    <div class="movie-info"> 
+                        <h4>ANIMAL</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('AQUAMAN AND THE LOST KINGDOM')"> 
+                <a href="/moviedisplay?title=AQUAMAN AND THE LOST KINGDOM"> 
+                    <img height="330px" src="/images/AQUAMAN AND THE LOST KINGDOM.jpg" alt="AQUAMAN AND THE LOST KINGDOM"> 
+                    <div class="movie-info"> 
+                        <h4>AQUAMAN AND THE LOST KINGDOM</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('BAD NEWZ')"> 
+                <a href="/moviedisplay?title=BAD NEWZ"> 
+                    <img height="330px" src="/images/BAD NEWZ.jpg" alt="BAD NEWZ"> 
+                    <div class="movie-info"> 
+                        <h4>BAD NEWZ</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('BHOLA')"> 
+                <a href="/moviedisplay?title=BHOLA"> 
+                    <img height="330px" src="/images/BHOLA.jpg" alt="BHOLA"> 
+                    <div class="movie-info"> 
+                        <h4>BHOLA</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('BLACK PANTHER WAKANDA FOREVER')"> 
+                <a href="/moviedisplay?title=BLACK PANTHER WAKANDA FOREVER"> 
+                    <img height="330px" src="/images/BLACK PANTHER WAKANDA FOREVER.jpg" alt="BLACK PANTHER WAKANDA FOREVER"> 
+                    <div class="movie-info"> 
+                        <h4>BLACK PANTHER WAKANDA FOREVER</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('FINAL DESTINATION 3')"> 
+                <a href="/moviedisplay?title=FINAL DESTINATION 3"> 
+                    <img height="330px" src="/images/FINAL DESTINATION 3.jpeg" alt="FINAL DESTINATION 3"> 
+                    <div class="movie-info"> 
+                        <h4>FINAL DESTINATION 3</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('GREATEST OF ALL TIME')"> 
+                <a href="/moviedisplay?title=GREATEST OF ALL TIME"> 
+                    <img height="330px" src="/images/GREATEST OF ALL TIME.jpg" alt="GREATEST OF ALL TIME"> 
+                    <div class="movie-info"> 
+                        <h4>GREATEST OF ALL TIME</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('HEREDITARY')"> 
+                <a href="/moviedisplay?title=HEREDITARY"> 
+                    <img height="330px" src="/images/HEREDITARY.jpg" alt="HEREDITARY"> 
+                    <div class="movie-info"> 
+                        <h4>HEREDITARY</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('Hitman Agent 47')"> 
+                <a href="/moviedisplay?title=Hitman Agent 47"> 
+                    <img height="330px" src="/images/hitmanagent47.jpg" alt="Hitman Agent 47"> 
+                    <div class="movie-info"> 
+                        <h4>Hitman Agent 47</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('INSIDIOUS CHAPTER 1')"> 
+                <a href="/moviedisplay?title=INSIDIOUS CHAPTER 1"> 
+                    <img height="330px" src="/images/INSIDIOUS CHAPTER 1.jpg" alt="INSIDIOUS CHAPTER 1"> 
+                    <div class="movie-info"> 
+                        <h4>INSIDIOUS CHAPTER 1</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('INSIDIOUS CHAPTER 2')"> 
+                <a href="/moviedisplay?title=INSIDIOUS CHAPTER 2"> 
+                    <img height="330px" src="/images/INSIDIOUS CHAPTER 2.jpg" alt="INSIDIOUS CHAPTER 2"> 
+                    <div class="movie-info"> 
+                        <h4>INSIDIOUS CHAPTER 2</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('INSIDIOUS CHAPTER 3')"> 
+                <a href="/moviedisplay?title=INSIDIOUS CHAPTER 3"> 
+                    <img height="330px" src="/images/INSIDIOUS CHAPTER 3.jpeg" alt="INSIDIOUS CHAPTER 3"> 
+                    <div class="movie-info"> 
+                        <h4>INSIDIOUS CHAPTER 3</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('INSIDIOUS THE LAST KEY')"> 
+                <a href="/moviedisplay?title=INSIDIOUS THE LAST KEY"> 
+                    <img height="330px" src="/images/INSIDIOUS THE LAST KEY.jpg" alt="INSIDIOUS THE LAST KEY"> 
+                    <div class="movie-info"> 
+                        <h4>INSIDIOUS THE LAST KEY</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('Ironman 1')"> 
+                <a href="/moviedisplay?title=Ironman 1"> 
+                    <img height="330px" src="/images/ironman1.jpg" alt="Ironman 1"> 
+                    <div class="movie-info"> 
+                        <h4>Ironman 1</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('IT')"> 
+                <a href="/moviedisplay?title=IT"> 
+                    <img height="330px" src="/images/IT.jpg" alt="IT"> 
+                    <div class="movie-info"> 
+                        <h4>IT</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('JOHN WICK CHAPTER 2')"> 
+                <a href="/moviedisplay?title=JOHN WICK CHAPTER 2"> 
+                    <img height="330px" src="/images/JOHN WICK CHAPTER 2.jpg" alt="JOHN WICK CHAPTER 2"> 
+                    <div class="movie-info"> 
+                        <h4>JOHN WICK CHAPTER 2</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('JOHN WICK CHAPTER 3')"> 
+                <a href="/moviedisplay?title=JOHN WICK CHAPTER 3"> 
+                    <img height="330px" src="/images/JOHN WICK CHAPTER 3.jpg" alt="JOHN WICK CHAPTER 3"> 
+                    <div class="movie-info"> 
+                        <h4>JOHN WICK CHAPTER 3</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('JOHN WICK CHAPTER 4')"> 
+                <a href="/moviedisplay?title=JOHN WICK CHAPTER 4"> 
+                    <img height="330px" src="/images/JOHN WICK CHAPTER 4.jpg" alt="JOHN WICK CHAPTER 4"> 
+                    <div class="movie-info"> 
+                        <h4>JOHN WICK CHAPTER 4</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('JOHN WICK')"> 
+                <a href="/moviedisplay?title=JOHN WICK"> 
+                    <img height="330px" src="/images/JOHN WICK.jpg" alt="JOHN WICK"> 
+                    <div class="movie-info"> 
+                        <h4>JOHN WICK</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('KAALKI')"> 
+                <a href="/moviedisplay?title=KAALKI"> 
+                    <img height="330px" src="/images/KAALKI.jpg" alt="KAALKI"> 
+                    <div class="movie-info"> 
+                        <h4>KAALKI</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('KGF CHAPTER 2')"> 
+                <a href="/moviedisplay?title=KGF CHAPTER 2"> 
+                    <img height="330px" src="/images/KGF CHAPTER 2.jpg" alt="KGF CHAPTER 2"> 
+                    <div class="movie-info"> 
+                        <h4>KGF CHAPTER 2</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('KGF')"> 
+                <a href="/moviedisplay?title=KGF"> 
+                    <img height="330px" src="/images/KGF.jpg" alt="KGF"> 
+                    <div class="movie-info"> 
+                        <h4>KGF</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('KILL')"> 
+                <a href="/moviedisplay?title=KILL"> 
+                    <img height="330px" src="/images/KILL.jpg" alt="KILL"> 
+                    <div class="movie-info"> 
+                        <h4>KILL</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('MUNJYA')"> 
+                <a href="/moviedisplay?title=MUNJYA"> 
+                    <img height="330px" src="/images/MUNJYA.webp" alt="MUNJYA"> 
+                    <div class="movie-info"> 
+                        <h4>MUNJYA</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('RED NOTICE')"> 
+                <a href="/moviedisplay?title=RED NOTICE"> 
+                    <img height="330px" src="/images/RED NOTICE.jpeg" alt="RED NOTICE"> 
+                    <div class="movie-info"> 
+                        <h4>RED NOTICE</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('SCREAM 4')"> 
+                <a href="/moviedisplay?title=SCREAM 4"> 
+                    <img height="330px" src="/images/SCREAM 4.jpg" alt="SCREAM 4"> 
+                    <div class="movie-info"> 
+                        <h4>SCREAM 4</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('SCREAM 5')"> 
+                <a href="/moviedisplay?title=SCREAM 5"> 
+                    <img height="330px" src="/images/SCREAM 5.jpg" alt="SCREAM 5"> 
+                    <div class="movie-info"> 
+                        <h4>SCREAM 5</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('SHAMSHERA')"> 
+                <a href="/moviedisplay?title=SHAMSHERA"> 
+                    <img height="330px" src="/images/SHAMSHERA.jpg" alt="SHAMSHERA"> 
+                    <div class="movie-info"> 
+                        <h4>SHAMSHERA</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('SNOW WHITE AND THE HUNTSMAN')"> 
+                <a href="/moviedisplay?title=SNOW WHITE AND THE HUNTSMAN"> 
+                    <img height="330px" src="/images/SNOW WHITE AND THE HUNTSMAN.jpg" alt="SNOW WHITE AND THE HUNTSMAN"> 
+                    <div class="movie-info"> 
+                        <h4>SNOW WHITE AND THE HUNTSMAN</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('THE AMAZING SPIDERMAN 2')"> 
+                <a href="/moviedisplay?title=THE AMAZING SPIDERMAN 2"> 
+                    <img height="330px" src="/images/THE AMAZING SPIDERMAN 2.jpg" alt="THE AMAZING SPIDERMAN 2"> 
+                    <div class="movie-info"> 
+                        <h4>THE AMAZING SPIDERMAN 2</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('THE AMAZING SPIDERMAN')"> 
+                <a href="/moviedisplay?title=THE AMAZING SPIDERMAN"> 
+                    <img height="330px" src="/images/THE AMAZING SPIDERMAN.jpg" alt="THE AMAZING SPIDERMAN"> 
+                    <div class="movie-info"> 
+                        <h4>THE AMAZING SPIDERMAN</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('THE CONJURING 2')"> 
+                <a href="/moviedisplay?title=THE CONJURING 2"> 
+                    <img height="330px" src="/images/THE CONJURING 2.jpg" alt="THE CONJURING 2"> 
+                    <div class="movie-info"> 
+                        <h4>THE CONJURING 2</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('THE CONJURING 3')"> 
+                <a href="/moviedisplay?title=THE CONJURING 3"> 
+                    <img height="330px" src="/images/THE CONJURING 3.jpg" alt="THE CONJURING 3"> 
+                    <div class="movie-info"> 
+                        <h4>THE CONJURING 3</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('THE CONJURING')"> 
+                <a href="/moviedisplay?title=THE CONJURING"> 
+                    <img height="330px" src="/images/THE CONJURING.jpg" alt="THE CONJURING"> 
+                    <div class="movie-info"> 
+                        <h4>THE CONJURING</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('THE LOST CITY OF Z')"> 
+                <a href="/moviedisplay?title=THE LOST CITY OF Z"> 
+                    <img height="330px" src="/images/THE LOST CITY OF Z.jpg" alt="THE LOST CITY OF Z"> 
+                    <div class="movie-info"> 
+                        <h4>THE LOST CITY OF Z</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('TIGER 3')"> 
+                <a href="/moviedisplay?title=TIGER 3"> 
+                    <img height="330px" src="/images/TIGER 3.jpg" alt="TIGER 3"> 
+                    <div class="movie-info"> 
+                        <h4>TIGER 3</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('UNCHARTED')"> 
+                <a href="/moviedisplay?title=UNCHARTED"> 
+                    <img height="330px" src="/images/UNCHARTED.jpg" alt="UNCHARTED"> 
+                    <div class="movie-info"> 
+                        <h4>UNCHARTED</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('JOURNEY 2 THE MYSTERIOUS ISLAND')"> 
+                <a href="/moviedisplay?title=JOURNEY 2 THE MYSTERIOUS ISLAND"> 
+                    <img height="330px" src="/images/JOURNEY 2 THE MYSTERIOUS ISLAND.jpg" alt="JOURNEY 2 THE MYSTERIOUS ISLAND"> 
+                    <div class="movie-info"> 
+                        <h4>JOURNEY 2 THE MYSTERIOUS ISLAND</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('THE DAWN')"> 
+                <a href="/moviedisplay?title=THE DAWN"> 
+                    <img height="330px" src="/images/THE DAWN.jpg" alt="THE DAWN"> 
+                    <div class="movie-info"> 
+                        <h4>THE DAWN</h4> 
+                    </div>
+                </a>
+            </div>
+   
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

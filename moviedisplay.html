@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh's Movie Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h3>Harsh's Movies Site</h3>
+        <div class="top-bar">
+            <nav>
+                <button onclick="window.location.href='/'">Home</button>
+                <button onclick="window.location.href='bollywood.html'">Bollywood</button>
+                <button onclick="window.location.href='hollywood.html'">Hollywood</button>
+            </nav>
+            <h3 id="movieTitle" style="font-size: x-large;"></h3>
+            <div class="search-container">
+                <form action="/search" method="GET">
+                    <input type="text" id="searchBox" name="query" placeholder="Search movies...">
+                    <button class="search-btn" type="submit"><img src="/images/magnifiericon.png"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="moviedisplaymain" style="padding-left: 2%; padding-right: 2%;">
+        <video id="movieVideo" width="1100" height="560" controls> 
+            <source id="movieSource" src="<%= movie.video %>" type="video/mp4">
+        </video>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh's Movie Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h3>Harsh's Movies Site</h3>
+        <div class="top-bar">
+            <nav>
+                <button onclick="window.location.href='/'">Home</button>
+                <button onclick="window.location.href='bollywood.html'">Bollywood</button>
+                <button onclick="window.location.href='hollywood.html'">Hollywood</button>
+            </nav>
+            <div class="search-container">
+                <form action="/search" method="GET">
+                    <input type="text" id="searchBox" name="query" placeholder="Search movies...">
+                    <button class="search-btn" type="submit"><img src="/images/magnifiericon.png"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="movie-container">
+            <div class="movie-card" onclick="setMovieTitle('ANIMAL')"> 
+                <a href="/moviedisplay?title=ANIMAL"> 
+                    <img height="330px" src="/images/ANIMAL.jpg" alt="ANIMAL"> 
+                    <div class="movie-info"> 
+                        <h4>ANIMAL</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('BAD NEWZ')"> 
+                <a href="/moviedisplay?title=BAD NEWZ"> 
+                    <img height="330px" src="/images/BAD NEWZ.jpg" alt="BAD NEWZ"> 
+                    <div class="movie-info"> 
+                        <h4>BAD NEWZ</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('BHOLA')"> 
+                <a href="/moviedisplay?title=BHOLA"> 
+                    <img height="330px" src="/images/BHOLA.jpg" alt="BHOLA"> 
+                    <div class="movie-info"> 
+                        <h4>BHOLA</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('GREATEST OF ALL TIME')"> 
+                <a href="/moviedisplay?title=GREATEST OF ALL TIME"> 
+                    <img height="330px" src="/images/GREATEST OF ALL TIME.jpg" alt="GREATEST OF ALL TIME"> 
+                    <div class="movie-info"> 
+                        <h4>GREATEST OF ALL TIME</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('KAALKI')"> 
+                <a href="/moviedisplay?title=KAALKI"> 
+                    <img height="330px" src="/images/KAALKI.jpg" alt="KAALKI"> 
+                    <div class="movie-info"> 
+                        <h4>KAALKI</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('KGF CHAPTER 2')"> 
+                <a href="/moviedisplay?title=KGF CHAPTER 2"> 
+                    <img height="330px" src="/images/KGF CHAPTER 2.jpg" alt="KGF CHAPTER 2"> 
+                    <div class="movie-info"> 
+                        <h4>KGF CHAPTER 2</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('KGF')"> 
+                <a href="/moviedisplay?title=KGF"> 
+                    <img height="330px" src="/images/KGF.jpg" alt="KGF"> 
+                    <div class="movie-info"> 
+                        <h4>KGF</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('KILL')"> 
+                <a href="/moviedisplay?title=KILL"> 
+                    <img height="330px" src="/images/KILL.jpg" alt="KILL"> 
+                    <div class="movie-info"> 
+                        <h4>KILL</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('MUNJYA')"> 
+                <a href="/moviedisplay?title=MUNJYA"> 
+                    <img height="330px" src="/images/MUNJYA.webp" alt="MUNJYA"> 
+                    <div class="movie-info"> 
+                        <h4>MUNJYA</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('SHAMSHERA')"> 
+                <a href="/moviedisplay?title=SHAMSHERA"> 
+                    <img height="330px" src="/images/SHAMSHERA.jpg" alt="SHAMSHERA"> 
+                    <div class="movie-info"> 
+                        <h4>SHAMSHERA</h4> 
+                    </div>
+                </a>
+            </div>
+            <div class="movie-card" onclick="setMovieTitle('TIGER 3')"> 
+                <a href="/moviedisplay?title=TIGER 3"> 
+                    <img height="330px" src="/images/TIGER 3.jpg" alt="TIGER 3"> 
+                    <div class="movie-info"> 
+                        <h4>TIGER 3</h4> 
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
